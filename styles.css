@@ -1249,3 +1249,99 @@ a {
   }
 }
 
+
+/* ================================================
+   Responsive fixes: navigation, hero, gallery
+   ================================================ */
+
+@media (max-width: 1024px) {
+  .hero-content {
+    gap: 32px;
+  }
+  .ring-scene {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .nav-container {
+    padding: 12px 16px;
+  }
+  .hero {
+    padding: 64px 16px 24px;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  .hero-title {
+    font-size: var(--font-size-3xl);
+    text-align: center;
+  }
+  .text-content {
+    order: 2;
+  }
+  .hero-img-wrapper {
+    order: 1;
+    justify-self: center;
+  }
+  .quick-facts {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    padding: 48px 12px 20px;
+  }
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+    max-width: 100%;
+  }
+  .nav-links a {
+    font-size: var(--font-size-sm);
+  }
+  .fact-item {
+    font-size: var(--font-size-xs);
+    gap: 6px;
+  }
+  .modal-content {
+    width: 98%;
+    margin: 6% auto;
+  }
+  .mobile-menu-btn {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile menu open state (toggled via JS: add .mobile-open to .nav-links) */
+.nav-links.mobile-open {
+  display: flex;
+  position: absolute;
+  top: 72px;
+  right: 16px;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--color-surface);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1100;
+  border: 1px solid var(--color-border);
+}
+
+/* Accessible focus for mobile menu button */
+.mobile-menu-btn:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+}
