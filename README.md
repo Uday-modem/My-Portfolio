@@ -245,74 +245,9 @@ Copyright notice
 
 Built/designed by credit
 
-🎨 Customization
-Change Theme Colors
-Edit :root in styles.css:
 
-css
-:root {
-  --color-primary: #2180008D;        /* Main brand color */
-  --color-primary-hover: #1D7480;    /* Hover state */
-  --color-text: #134252;              /* Text color */
-  --color-background: #FCF8F9;        /* Background */
-}
-Update Your Info
-Edit index.html:
 
-Line 47: Your name and title
 
-Line 52-54: Role options (wipe text)
-
-Line 55: Bio/description
-
-Line 57-59: Quick facts
-
-Line 62: Profile image
-
-Line 68: Resume PDF link
-
-Add/Edit Projects
-In index.html, modify project grid (lines 150-180):
-
-xml
-<div class="gallery-item project-card" onclick="openModal('projectName')">
-  <img src="projectImage.png" alt="Project" class="gallery-img">
-  <div class="gallery-overlay">
-    <h3>Project Title</h3>
-    <p>Technology Stack</p>
-  </div>
-</div>
-Then add modal data in script.js.
-
-Change Animations
-Edit keyframes in styles.css:
-
-@keyframes float - Shape floating animation
-
-@keyframes spinRing - Profile ring rotation
-
-@keyframes floatImage - Profile image bob
-
-@keyframes slideUp - Modal entrance
-
-📊 Performance Metrics
-Metric	Value	Status
-File Size (HTML)	13 KB	✅ Lightweight
-File Size (CSS)	46 KB	✅ Optimized
-File Size (JS)	16 KB	✅ Minimal
-Total Bundle	~75 KB	✅ Fast
-Dependencies	0 (except Font Awesome)	✅ No bloat
-Lighthouse Score	95+	✅ Excellent
-Mobile Friendly	Yes	✅ Responsive
-Dark Mode	Yes	✅ Supported
-CSS Optimization History
-Original: 1950 lines
-
-Cleaned: 650 lines
-
-Reduction: 67% smaller
-
-Impact: ZERO visual changes
 
 🚀 Deployment
 Vercel (Current)
@@ -339,103 +274,6 @@ Netlify
 bash
 # Drag and drop files to Netlify
 # OR connect GitHub repo for auto-deploy
-🌙 Dark Mode
-Auto Detection
-Portfolio automatically detects OS preference:
-
-Uses @media (prefers-color-scheme: dark)
-
-Light mode on Windows/bright, Dark mode on macOS/dark
-
-Manual Toggle
-Click theme button in navbar to override OS setting:
-
-Uses [data-color-scheme="dark"] attribute
-
-Preference persists in current session
-
-🔧 Key JavaScript Features
-Theme Toggle
-javascript
-// Toggle dark/light mode
-document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-3D Ring Rotation
-javascript
-// Drag to rotate tech stack ring
-const ring = document.getElementById('techRing');
-// Tracks mouse movement and applies 3D rotation
-Wipe Text Animation
-javascript
-// Auto-rotate role titles with wipe effect
-// Cycles through: Full Stack Developer → IoT Enthusiast → Problem Solver
-Project Modal
-javascript
-// Click project card → Opens modal with details
-function openModal(projectName) { /* ... */ }
-Scatter Gallery
-javascript
-// Drag images in "My Journey" section
-// Draggable with mouse tracking
-📱 Responsive Behavior
-Desktop (1024px+)
-Full navigation bar
-
-3-column project grid
-
-Side-by-side hero layout
-
-Full 3D ring visualization
-
-Tablet (768px - 1023px)
-Navbar collapses to hamburger
-
-2-column project grid
-
-Centered hero layout
-
-Smaller tech stack ring
-
-Mobile (< 480px)
-Full hamburger menu
-
-1-column layout
-
-Stacked buttons
-
-Smaller fonts and spacing
-
-Optimized touch targets
-
-🎯 SEO & Meta
-xml
-<title>Portfolio - Full Stack IoT Developer</title>
-<meta name="description" content="Interactive portfolio showcasing full-stack web development and IoT projects">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-📝 License
-This portfolio is open source. Feel free to:
-
-✅ Fork and customize
-
-✅ Use as template for your portfolio
-
-✅ Learn from the code
-
-✅ Share with others
-
-Credit appreciated but not required!
-
-🤝 Contributing
-Want to suggest improvements?
-
-Fork the repository
-
-Create feature branch: git checkout -b feature/improvement
-
-Commit changes: git commit -m "Add improvement"
-
-Push to branch: git push origin feature/improvement
-
-Submit pull request
 
 📧 Contact
 Modem Uday Kiran Kumar
@@ -455,24 +293,10 @@ Vercel - Hosting platform
 
 Kodnest - Full-stack training
 
-JNTUA - Academic institution
+JNTUA - Audisankara Institute of Technology
 
 📅 Last Updated
 January 4, 2026
 
-Recent Changes
-✅ CSS optimized (1950 → 650 lines)
-
-✅ Removed duplicate dark mode variables
-
-✅ Enhanced mobile responsiveness
-
-✅ Added wipe text animation
-
-✅ Implemented 3D tech stack ring
-
-✅ Created project modal system
-
-✅ Built drag-and-drop gallery
 
 Made with ❤️ by Modem Uday Kiran Kumar | Deployed on Vercel
